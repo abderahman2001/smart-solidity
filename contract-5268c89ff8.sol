@@ -5,7 +5,7 @@ import "@openzeppelin/contracts@4.8.3/token/ERC721/ERC721.sol";
 import "@openzeppelin/contracts@4.8.3/access/Ownable.sol";
 
 contract CRYPTO is ERC721, Ownable {
-    constructor() ERC721("CRYPTO", "CRP") {}
+    constructor() ERC721("CRYPTOCURRENCY", "CTP") {}
 
     function safeMint(address to, uint256 tokenId) public onlyOwner {
         _safeMint(to, tokenId);
